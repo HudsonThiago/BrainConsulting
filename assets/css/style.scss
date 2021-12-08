@@ -1,0 +1,777 @@
+/*
+|--------------------------------------------
+|    navbar
+|--------------------------------------------
+*/ 
+
+.header {
+    display: block;
+    background-color: var(--white-100);
+    width: 100%;
+    height: 4rem;
+}
+
+.header nav {
+    width: 70%;
+    height: 4rem;
+    background-color: var(--white-100);
+    margin-left: 15%;
+    margin-right: 15%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav .logo {
+    width: auto;
+    height: 3rem;
+}
+
+.header nav a {
+    color: var(--black-300);
+    text-decoration: None;
+    font-weight:bold;
+    transition: 0.2s;
+    padding: 0.4rem;
+    line-height: 2rem;
+}
+
+.header nav a:hover {
+    opacity: 0.5;
+}
+
+.header nav .links {
+    display: flex;
+    align-items: center;
+}
+
+.header nav .links ul {
+    margin-left: 2rem;
+    display: flex;
+    list-style-type: none;
+}
+
+.language {
+    background-color: var(--white-300);
+    display: flex;
+    align-items: center;
+    border-radius: 0.4rem;
+}
+
+.language img {
+    width: 1.6rem;
+    height: 1rem;
+    padding: 0.4rem;
+    border-radius: 0.6rem;
+}
+
+.language select {
+    color: var(--black-300);
+    background-color: var(--white-200);
+    border: none;
+    width: 6.2rem;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.language select option {
+    color: var(--black-300);
+    background-color: var(--white-200);
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-mobile, .nav-mobile {
+    visibility: visible;
+}
+
+.btn-mobile {
+    display: none;
+}
+
+#nav {
+    display: flex;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+#nav-mobile .links {
+    display: none;
+}
+
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    #nav {
+        display: none;
+    } 
+
+    #nav-mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        margin: 0 0;
+    }
+
+    #nav-mobile .links {
+        display: flex;
+        height: 4rem;
+        justify-content: space-between;
+        margin: 0rem 15%;
+    }
+
+    #nav-mobile .links .btn-mobile {
+        display: block;
+    }
+
+    #nav-mobile ul {
+        display: none;
+    }
+
+    #nav-mobile.active ul {
+        display: block;
+        list-style-type: none;
+        background-color: white;
+        width: 100%;
+    }
+
+    #nav-mobile ul li {
+        margin: 0rem 15%;
+    }
+
+    #nav-mobile ul li a {
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    #nav-mobile ul li a div{
+        margin: 0rem 0rem;
+        padding: 0.4rem 0rem;
+    }
+
+    #nav-mobile ul li .language {
+        padding: 0% 0%;
+        width: 100%;
+    }
+    
+    .language img {
+        width: 1.6rem;
+        height: 1rem;
+        padding: 0.4rem;
+        border-radius: 0.6rem;
+    }
+    
+    .language select {
+        background-color: var(--white-200);
+        border: none;
+        width: 100%;
+    }
+}
+    
+@media only screen and (max-width: 800px) {
+
+    #nav {
+        display: none;
+    } 
+
+    #nav-mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        margin: 0 0;
+    }
+
+    #nav-mobile .links {
+        display: flex;
+        height: 4rem;
+        justify-content: space-between;
+        margin: 0rem 5%;
+    }
+
+    #nav-mobile .links .btn-mobile {
+        display: block;
+    }
+
+    #nav-mobile ul {
+        display: none;
+    }
+
+    #nav-mobile.active ul {
+        display: block;
+        list-style-type: none;
+        background-color: white;
+        width: 100%;
+    }
+
+    #nav-mobile ul li {
+        margin: 0rem 5%;
+    }
+
+    #nav-mobile ul li a {
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    #nav-mobile ul li a div{
+        margin: 0rem 0rem;
+        padding: 0.4rem 0rem;
+    }
+
+    #nav-mobile ul li .language {
+        padding: 0% 0%;
+        width: 100%;
+    }
+    
+    .language img {
+        width: 1.6rem;
+        height: 1rem;
+        padding: 0.4rem;
+        border-radius: 0.6rem;
+    }
+    
+    .language select {
+        background-color: var(--white-200);
+        border: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #btn-menu {
+        background: transparent;
+        border: transparent;
+        width: 1.8rem;
+        height: 2.8rem;
+        box-sizing: border-box;
+        outline-color: var(--black-200);
+
+    }
+
+    #btn-menu .btn-hamburguer {
+        border-top: 0.2rem solid var(--black-300);
+    }
+
+    #btn-menu .btn-hamburguer::after, .btn-hamburguer::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0.2rem;
+        background: var(--black-300);
+        margin-top: 0.3rem;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav-mobile.active .btn-hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav-mobile.active .btn-hamburguer::after {
+        transform: rotate(135deg);
+        top: -8px;
+    }
+
+    #nav-mobile.active .btn-hamburguer::before {
+        transform: rotate(-135deg);
+    }
+}
+
+
+/*
+|--------------------------------------------
+|    main-section
+|--------------------------------------------
+*/ 
+
+.main-section {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+.title-section {
+    width: 70%;
+    margin: auto;
+    margin-top: 1.6rem;
+    margin-bottom: 0.2rem;
+}
+
+.title-section h3{
+    font-weight: 700;
+}
+
+.title-section a{
+    text-decoration: none;
+    display: flex;
+    align-items:flex-end;
+}
+
+.title-section a img{
+    width: auto;
+    height: 0.6rem;
+    margin-right: 0.8rem;
+}
+
+.title-section a div{
+    margin-bottom: 0.4rem;
+}
+
+.title-section a h1{
+    font-size: 2rem;
+    margin-right: 0.8rem;
+}
+
+.title-section a span{
+    font-weight: 900;
+}
+
+.main-section .c1 {
+    width: 45%;
+    margin-right: 5%;
+    margin-top: 1.6rem;
+}
+
+.main-section .divisao-senha {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+}
+
+.main-section .esqueceu-senha {
+    cursor: pointer;
+    color: #337AB8;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.main-section p {
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    margin-top: 1.6rem;
+}
+
+.main-section p:first-child {
+    margin-top: 0rem;
+}
+
+
+.main-section input[type=text], input[type=password], input[type=email] {
+    background-color: var(--white-300);
+    box-sizing: border-box;
+    font-size: 1rem;
+    height: 2.4rem;
+    padding: 0.4rem;
+    width: 100%;
+    border: 1px solid var(--white-400);
+    border-radius: 0.6rem;
+    outline-color: var(--black-200);
+}
+
+.main-section input[type=file] {
+    background-color: var(--white-300);
+    box-sizing: border-box;
+    font-size: 1rem;
+    height: 2.4rem;
+    width: 100%;
+    border-radius: 0.6rem;
+    margin-bottom: 1.6rem;
+    outline-color: var(--black-200);
+}
+
+.main-section input[type=file]::-webkit-file-upload-button {
+    height: 2.4rem;
+    padding: 0rem 1rem;   
+    border: 1px solid var(--black-500);
+    border-radius: 0.6rem;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background: var(--white-400);
+}
+
+.main-section .c2 {
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 1.6rem;
+}
+
+.main-section .c2 p {
+    text-indent: 2rem;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.main-section .c2 h3 {
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.botao-login {
+    background: linear-gradient( var(--green-100), var(--green-200));
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white-100);
+    width: 14rem;
+    box-sizing: border-box;
+    padding: 0.4rem;
+    min-height: 2.4rem;
+    margin-top: 4rem;
+    border: 0px none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.3);
+}
+
+.main-section .caixa-botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-section .caixa-botoes a {
+    margin-top: 1rem;
+    width: 32%;
+}
+
+.main-section .caixa-botoes a .botao {
+    background: linear-gradient( var(--green-100), var(--green-200));
+    font-family: 'Roboto', sans-serif;
+    color: var(--white-100);
+    font-size: 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.4rem;
+    min-height: 2.4rem;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.3);
+}
+
+.main-section .msg_erro {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    color: red;
+}
+
+.img-redefinicao-senha {
+    width: 100%;
+    height: auto;
+    margin: 0rem;
+    margin-bottom: 2rem;
+}
+
+.info-box {
+    width: 100%;
+    display: inline;
+}
+
+.info-box img {
+    display: block;
+    float: left;
+    margin-right: 1rem;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.info-box p {
+    margin: 0rem;
+    font-weight: 700;
+}
+
+/*
+|--------------------------------------------
+|    cards-section
+|--------------------------------------------
+*/ 
+
+.cards-section {
+    width: 70%;
+    margin: 4rem auto;
+    margin-bottom: 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-section .card {
+    background: linear-gradient(to top, var(--green-200) , var(--white-100) 90%);
+    width: 28%;
+    min-height: 25rem;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.3);
+}
+
+.cards-section .card .card-main {
+    background-color: var(--white-100);
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100%;
+    border-radius: 1.9rem;
+}
+
+.cards-section .card .card-main div {
+    height: 2.8rem;
+    display: flex;
+    margin-top: -0.4rem;
+    align-items: center;
+}
+
+.cards-section .card .card-main div img {
+    width: 1.8rem;
+    height: auto;
+}
+
+.cards-section .card .card-main div h3 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-left: 0.6rem;
+}
+
+.cards-section .card .card-main p {
+    margin-top: 0.4rem;
+    text-indent: 1.6rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+/*
+|--------------------------------------------
+|    MODAL
+|--------------------------------------------
+*/
+
+.tela-escura {
+    position: fixed;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.tela-escura:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    width: 35rem;
+    height: 18rem;
+    display: flex;
+    border-radius: 2rem;
+    flex-direction: column;
+    position: relative;
+    margin: 0rem auto;
+    top: 0;
+    left: 0;
+    transform: translate(0%,50%);
+    box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.3);
+}
+
+.modal .modal-header {
+    background-color: var(--black-200);
+    width: 100%;
+    height: 3.2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.modal nav {
+    background: linear-gradient(to right, #FF7733 , #FFDD33);
+    width: 100%;
+    height: 0.4rem;
+}
+
+.modal .modal-main {
+    background-color: var(--white-100);
+    width: 100%;
+    height: 11.2rem;
+    padding: 2.2rem;
+    box-sizing: border-box;
+}
+
+.modal .modal-main a {
+    text-decoration: none;
+}
+
+.modal .modal-main .botao-login {
+    display: block;
+    margin: 0rem auto;
+    margin-top: 2rem;
+}
+
+.modal .modal-main p {
+    text-align: center;
+    font-weight: 700;
+}
+
+.modal .modal-footer {
+    background-color: var(--white-300);
+    margin-top: auto;
+    width: 100%;
+    height: 3.2rem;
+    border-top: 0.2rem solid var(--white-350);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+
+@media only screen and (max-width: 800px) {
+    
+    .header nav {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .header nav .logo {
+        height: 2.4rem;
+    }
+
+    .title-section {
+        width: 90%;
+        margin: auto;
+        margin-top: 1.6rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .title-section h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .main-section {
+        width: 90%;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .main-section .c1 {
+        display: inline;
+        width: 100%;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    
+    .main-section .c2 {
+        display: inline;
+        width: 100%;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .main-section .c1 .botao-login {
+        width: 100%;
+
+    }
+    
+    .cards-section {
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 2rem auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cards-section .card {
+        display: flex;
+        width: 100%;
+        min-height: 10rem;
+        margin-top: 2rem;
+        padding: 0.2rem;
+        border-radius: 2rem;
+    }
+
+    .cards-section .card .card-main p {
+        font-size: 0.8rem;
+    }
+
+    .cards-section .card .card-main div h3 {
+        font-size: 1rem;
+    }
+
+    .modal {
+        width: 90%;
+        height: 18rem;
+        margin: 5%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+
+    .main-section .c1 .botao-login {
+        width: 100%;
+    }
+
+    .main-section .c1 {
+        width: 48%;
+        margin-right: 2%;
+        margin-top: 1.6rem;
+    }
+    
+    .main-section .c2 {
+        display: inline;
+        width: 48%;
+        margin-left: 2%;
+        margin-top: 1.6rem;
+    }
+
+    .cards-section {
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 2rem auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cards-section .card {
+        display: flex;
+        width: 100%;
+        min-height: 10rem;
+        margin-top: 2rem;
+        padding: 0.2rem;
+        border-radius: 2rem;
+    }
+
+    .cards-section .card .card-main p {
+        font-size: 0.8rem;
+    }
+
+    .cards-section .card .card-main div h3 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-section .caixa-botoes .botao {
+        font-size: 0.6rem;
+    }
+
+    .modal  {
+        height: 20rem;
+    }
+
+    .modal .modal-main  {
+        height: 13.2rem;
+    }
+
+    .modal .modal-main .botao-login {
+        width: 12rem;
+    }
+}

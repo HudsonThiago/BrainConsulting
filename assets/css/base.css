@@ -1,34 +1,65 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Headland One', serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Headland One', serif;
 }
 
 :root {
-    --white-100: #ffffff;
-    --white-200: #E5E5E5;
-    --white-300: #CCCCCC;
-    --white-400: #999999;
-    
-    --black-200: #333333;
-    --black-300: #4D4D4D;
-    --black-500: #808080;
-    --green-100: #5CB85C;
-    --green-200: #008000;
+  --white-100: #ffffff;
+  --white-200: #E5E5E5;
+  --white-300: #CCCCCC;
+  --white-350: #B2B2B2;
+  --white-400: #999999;
+  --black-200: #333333;
+  --black-300: #4D4D4D;
+  --black-500: #808080;
+  --green-100: #5CB85C;
+  --green-200: #008000;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
 }
 
 body {
-    background-color: var(--white-200);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  background-color: var(--white-200);
 }
 
 p, a, span, h1, h2, h3 {
-    color: var(--black-200);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-} 
+  color: var(--black-200);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
 
 p {
-    text-align: justify;
+  text-align: justify;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
 }
 
 /*background: linear-gradient(0deg, var(--red-100) 0%, var(--orange-100) 30%, var(--yellow-100) 100%);*/
+/*# sourceMappingURL=base.css.map */
