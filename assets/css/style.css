@@ -374,7 +374,7 @@
   margin-top: 0rem;
 }
 
-.main-section input[type=text], input[type=password], input[type=email] {
+.main-section input[type=text], input[type=password], input[type=email], input[type=email], input[type=date] {
   background-color: var(--white-300);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
