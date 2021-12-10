@@ -94,6 +94,9 @@
                     <a href="redefinicao_senha.html" class="esqueceu-senha">Esqueceu a senha?</a>
                 </div>
                 <input type="password" name="">
+                <!--<p class="msg_erro">Usuário ou senha inválida</p>                               (APARECE QUANDO O USUÁRIO DIGITOU CREDENCIAIS QUE NÃO SÃO COMPATÍVEIS COM O SISTEMA)  -->
+                <!--<p class="msg_erro">Aguarde a confirmação dos seus dados para logar</p>         (APARECE QUANDO O USUÁRIO EXISTE MAS AINDA NÃO ESTÁ ATIVO)  -->
+                <!--<p class="msg_erro">Usuário não existe</p>                                      (APARECE QUANDO O USUÁRIO NÃO EXISTE)  -->
                 <button type="submit" class="botao-login">Acessar</button>
             </form>
         </div>
@@ -154,7 +157,7 @@
 
 
 
-    <!-- MODAL -->
+    <!-- MODAL REDEFINIÇÃO DE SENHA -->
     <div class="tela-escura" id="modal_senha">
         <div class="modal">
             <div class="modal-header">
@@ -172,6 +175,25 @@
     </div>
     <!-- FIM MODAL -->
 
+
+
+    <!-- MODAL CADASTRO -->
+    <div class="tela-escura" id="modal_cadastro">
+        <div class="modal">
+            <div class="modal-header">
+
+            </div>
+            <nav></nav>
+            <div class="modal-main">
+                <p>Usuário cadastrado! Você poderá fazer login apenas quando confirmarmos os seus dados. Isso pode levar alguns dias.</p>
+                <a href=""><button type="submit" class="botao-login">OK</button></a>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+    <!-- FIM MODAL -->
 
 
     <!-- FOOTER -->
