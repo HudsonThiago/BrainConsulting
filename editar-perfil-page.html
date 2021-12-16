@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    <link href="assets/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <script src="assets/js/menu-mobile.js"></script>
+    <title>Início | Brainconsulting</title>
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <!-- NAV DESKTOP -->
+        <nav id="nav">
+            <div class="links">
+                <img class="logo" src="assets/imgs/logo.png" alt="logo">
+                <ul class="nav-mobile">
+                    <li><a href="dashboard.html"><i class="fas fa-th-large"></i>Desafios</a></li>
+                    <li class="link-active"><a href="editar-perfil-page.html"><i class="fas fa-user"></i> Perfil</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i> Usuários</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="logout-btn">
+                <div>
+                    <img src="assets/imgs/icons/logout.svg" alt="logout">
+                    Sair
+                </div>
+            </a>
+        </nav>
+        <!-- FIM NAV DESKTOP -->
+
+        <!-- NAV MOBILE -->
+        <nav id="nav-mobile">
+            <div class="links">
+                <img class="logo" src="assets/imgs/logo.png" alt="logo">
+                <div class="logout-box">
+                    <a href="index.html">
+                        <img src="assets/imgs/icons/logout.svg" alt="logout">
+                    </a>
+                    <button id="btn-menu" class="btn-mobile">
+                        <div class="btn-hamburguer">
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <form action="" method="get">
+                <ul>
+                    <li><a href="dashboard.html"><div><i class="fas fa-th-large"></i> Desafios</div></a></li>
+                    <li><a href="editar-perfil-page.html"><div><i class="fas fa-user"></i> Perfil</div></a></li>
+                    <li><a href="#"><div><i class="fas fa-cogs"></i> Usuários</div></a></li>
+                </ul>
+            </form>
+        </nav>
+        <!-- FIM NAV MOBILE -->
+
+    </header>
+    
+    <!-- TÍTULO -->
+    <section class="title-section">
+        <div class="c1">
+            <div>
+                <a href="dashboard.html"><h1><span>Brain</span>consulting</h1><div class="desktop-1200"><img src="assets/imgs/icons/seta.svg" alt=""><span>Voltar</span></div></a>
+                <h3>Nome de usuário</3h>
+            </div>
+        </div>
+        <div class="button-box">
+            <a class="btn-edit" href="editar-perfil.html"><button type="submit" class="botao-login"><i class="fas fa-pencil-alt"></i> Editar perfil</button></a>
+            <a class="btn-edit" href="editar-senha.html"><button type="submit" class="botao-login"><i class="fas fa-lock"></i> Editar Senha</button></a>
+        </div>
+    </section>
+    <!-- FIM TÍTULO -->
+    
+    <!-- MAIN -->
+    <section class="main-section">
+        <div class="c1">
+            <p>Usuário</p>
+            <input type="text" name="" maxlength="100" disabled>
+            <p>Nome</p>
+            <input type="text" name="" maxlength="100" disabled>
+            <p>Instituição superior</p>
+            <input type="text" name="" disabled>
+            <p>Período de ingresso</p>
+            <input type="text" name="" disabled>
+        </div>
+        <div class="c2">
+            <p>Email</p>
+            <input type="email" name="" maxlength="256" disabled>
+            <p>CPF</p>
+            <input class="cpf" type="text" name="" maxlength="14" disabled>
+            <p>Curso</p>
+            <input type="text" name="" disabled>
+            <p>Idioma</p>
+            <input type="text" name="" disabled>
+        </div>
+    </section>
+    <!-- FIM MAIN -->
+
+
+    <!-- FOOTER -->
+    <div class="divisao"></div>
+    <footer>
+        <p>Financial Bureau Consulting © 2021 - </p>
+        <a href="https://www.ejectufrn.com.br/">
+            <img src="assets/imgs/inicio/eject.svg" alt="eject">
+            <p>EJECT</p>
+        </a>
+    </footer>
+    <!-- FIM FOOTER -->
+</body>
+</html>

@@ -12,10 +12,13 @@
     --white-400: #999999;
     
     --black-200: #333333;
+    --black-250: #404040;
     --black-300: #4D4D4D;
+    --black-400: #999999;
     --black-500: #808080;
     --green-100: #5CB85C;
     --green-200: #008000;
+    --green-300: #005C00;
 }
 
 html {
@@ -34,18 +37,32 @@ p, a, span, h1, h2, h3 {
     color: var(--black-200);
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-} 
+}
 
 p {
     text-align: justify;
+}
+
+section .margin-top-2 {
+    margin-top: 2rem;
 }
 
 .desktop {
     display: block;
 }
 
+.desktop-1200 {
+    display: block;
+}
+
 .mobile {
     display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .desktop-1200 {
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 800px) {
