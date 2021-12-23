@@ -1,0 +1,97 @@
+.titulo-desafio-container {
+    width: 100%;
+}
+
+.titulo-box {
+    width: 100%;
+    margin: 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo {
+    font-weight: 700;
+    text-align: justify;
+}
+
+.titulo span {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.titulo-box p {
+    margin-left: 2rem;
+}
+
+.status-box {
+    background: linear-gradient( var(--white-350), var(--black-450));
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white-100);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.4rem;
+    min-height: 2.4rem;
+    margin: 0rem;
+    border: 0px none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.3);
+}
+
+.main-section {
+    width: 70%;
+    margin-bottom: 0rem;
+}
+
+.buttons-section {
+    width: 70%;
+    margin: 0rem auto;
+}
+
+.buttons-section div {
+    display: flex;
+    width: 100%;
+    margin-top: 0.6rem;
+    justify-content: space-between;
+}
+
+.buttons-section div button {
+    width: 49.5%;
+}
+
+.desafio-section {
+    width: 70%;
+    margin: 0rem auto;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.btn-success {
+    background: linear-gradient( var(--green-100), var(--green-200));
+}
+
+.btn-danger {
+    background: linear-gradient( var(--red-100), var(--red-200));
+}
+
+.btn-able {
+    background: linear-gradient( var(--blue-100), var(--blue-200));
+}
+
+@media only screen and (max-width: 800px) {
+    
+
+    .buttons-section {
+        width: 90%;
+        margin: 0rem auto;
+    }
+
+    .desafio-section {
+        width: 90%;
+        margin: 0rem auto;
+        margin-top: 1rem;
+    }
+}

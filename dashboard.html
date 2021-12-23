@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <script src="https://kit.fontawesome.com/7fd798150d.js" crossorigin="anonymous"></script>
     <script src="assets/js/menu-mobile.js"></script>
-    <title>Início | Brainconsulting</title>
-
-    <title>Document</title>
+    <title>Dashboard | Brainconsulting</title>
 </head>
 <body>
     <header class="header">
@@ -27,7 +25,7 @@
                 <ul class="nav-mobile">
                     <li class="link-active"><a href="dashboard.html"><i class="fas fa-th-large"></i>Desafios</a></li>
                     <li><a href="editar-perfil-page.html"><i class="fas fa-user"></i> Perfil</a></li>
-                    <li><a href="#"><i class="fas fa-cogs"></i> Usuários</a></li>
+                    <li><a href="usuarios.html"><i class="fas fa-cog"></i> Usuários</a></li>
                 </ul>
             </div>
             <a href="index.html" class="logout-btn">
@@ -57,7 +55,7 @@
                 <ul>
                     <li><a href="dashboard.html"><div><i class="fas fa-th-large"></i> Desafios</div></a></li>
                     <li><a href="editar-perfil-page.html"><div><i class="fas fa-user"></i> Perfil</div></a></li>
-                    <li><a href="#"><div><i class="fas fa-cogs"></i> Usuários</div></a></li>
+                    <li><a href="usuarios.html"><div><i class="fas fa-cog"></i> Usuários</div></a></li>
                 </ul>
             </form>
         </nav>
@@ -68,26 +66,42 @@
     <!-- TÍTULO -->
     <section class="title-section">
         <div>
-            <a href="dashboard.html"><h1><span>Brain</span>consulting</h1></a>
+            <a href="dashboard.html">
+                <h1><span>Brain</span>consulting</h1>
+            </a>
             <h3>Nome de usuário</3h>
         </div>
-        <a class="main-btn add-btn" href=""><button type="submit" class="botao-login"> <img src="assets/imgs/icons/add.svg" alt="add">Novo desafio</button></a>
+        <a class="main-btn add-btn" href="cadastrar-desafio.html"><button type="submit" class="botao-login"> <img src="assets/imgs/icons/add.svg" alt="add">Novo desafio</button></a>
     </section>
     <!-- FIM TÍTULO -->
     
-    <h1 class="main-title">Meus Desafios</h1>
+    <h1 class="main-title">Desafios</h1>
     <!-- MAIN -->
     <section class="main-section">
         
         <!-- CONTAINER -->
         <div class="desafio-container">
-
+            <form action="dashboard.html">
+                <div class="search-container">
+                        <select name="" id="" onChange="this.form.submit()">
+                            <option value="">Todos</option>
+                            <option value="">Aguardando aprovação</option>
+                            <option value="">Aberto para solução</option>
+                            <option value="">Aguardando solução do aluno</option>
+                            <option value="">Finalizado</option>
+                        </select>
+                        <div class="search-box">
+                            <input type="search" placeholder="Pesquisar..." name="" id="">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                </div>
+            </form>
             <!-- BOX CONTAINER -->
             <div class="main-desafio-container">
                 <!-- BOX 1 -->
-                <a href="">
+                <a href="desafio.html">
                     <div class="card-desafio">
-                        <div class="card-img">
+                        <div class="card-img" style="background-image: url('https://wallpaperaccess.com/full/5648058.jpg');">
                             <h3>R$ 100.00</h3>
                         </div>
                         <div class="card-status">
@@ -99,7 +113,7 @@
                 <!-- FIM BOX 1 -->
 
                 <!-- BOX 2 -->
-                <a href="">
+                <a href="desafio.html">
                     <div class="card-desafio">
                         <div class="card-img">
                             <h3>R$ 100.00</h3>
@@ -113,9 +127,9 @@
                 <!-- FIM BOX 2 -->
 
                 <!-- BOX 3 -->
-                <a href="">
+                <a href="desafio.html">
                     <div class="card-desafio">
-                        <div class="card-img">
+                        <div class="card-img" style="background-image: url('https://www.wallpapertip.com/wmimgs/55-555501_lo-fi-wallpaper-4k.jpg')">
                             <h3>R$ 100.00</h3>
                         </div>
                         <div class="card-status">
@@ -127,9 +141,9 @@
                 <!-- FIM BOX 3 -->
 
                 <!-- BOX 4 -->
-                <a href="">
+                <a href="desafio.html">
                     <div class="card-desafio">
-                        <div class="card-img">
+                        <div class="card-img" style="background-image: url('https://wallpapersmug.com/download/1280x720/11a3dc/firewatch-game-sunset-artwork.jpg')">
                             <h3>R$ 100.00</h3>
                         </div>
                         <div class="card-status">
@@ -141,9 +155,9 @@
                 <!-- FIM BOX 4 -->
 
                 <!-- BOX 5 -->
-                <a href="">
+                <a href="desafio.html">
                     <div class="card-desafio">
-                        <div class="card-img">
+                        <div class="card-img" style="background-image: url('https://i.pinimg.com/736x/8c/b3/ca/8cb3cad44fc7739b62c8482adfc6a809.jpg')">
                             <h3>R$ 100.00</h3>
                         </div>
                         <div class="card-status">
@@ -155,7 +169,7 @@
                 <!-- FIM BOX 5 -->
 
                 <!-- BOX 6 -->
-                <a href="">
+                <a href="desafio.html">
                     <div class="card-desafio">
                         <div class="card-img">
                             <h3>R$ 100.00</h3>
@@ -230,7 +244,6 @@
 
     </section>
     <!-- FIM MAIN -->
-
 
     <!-- FOOTER -->
     <div class="divisao"></div>

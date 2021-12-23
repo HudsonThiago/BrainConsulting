@@ -4,6 +4,18 @@
   margin-top: 3rem;
 }
 
+.divisao-1 {
+  display: block;
+  margin: 0px;
+  margin-top: 1.4rem;
+}
+
+.divisao-2 {
+  display: block;
+  margin: 0px;
+  margin-top: 2rem;
+}
+
 footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;

@@ -1,0 +1,394 @@
+.numbers-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.numbers-container .card {
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--green-200)), color-stop(90%, var(--white-100)));
+  background: linear-gradient(to top, var(--green-200), var(--white-100) 90%);
+  width: 30%;
+  min-height: 6rem;
+  padding: 0.2rem;
+  margin: 0rem 1rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.numbers-container .card:first-child {
+  margin-left: 0rem;
+}
+
+.numbers-container .card:last-child {
+  margin-right: 0rem;
+}
+
+.numbers-box {
+  background-color: var(--white-100);
+  width: 100%;
+  height: 6rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.numbers-box h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--black-200);
+}
+
+.numbers-box h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black-500);
+}
+
+.tabela-container {
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--green-200)), color-stop(90%, var(--white-100)));
+  background: linear-gradient(to top, var(--green-200), var(--white-100) 90%);
+  width: 100%;
+  min-height: 10rem;
+  padding: 0.2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tabela-container .tabela-box {
+  background-color: var(--white-100);
+  width: 100%;
+  min-height: 10rem;
+  border-radius: 1rem;
+}
+
+.tabela-container .tabela-box .tabela-header {
+  background-color: var(--black-300);
+  padding: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.tabela-container .tabela-box .tabela-header div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabela-container .tabela-box .tabela-header div:nth-child(1) div {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--green-100)), to(var(--green-200)));
+  background: linear-gradient(var(--green-100), var(--green-200));
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.tabela-container .tabela-box .tabela-header div:nth-child(1) h2 {
+  color: var(--white-100);
+  font-weight: 500;
+  margin: 0.4rem;
+}
+
+.tabela-container .tabela-box .tabela-header div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tabela-container .tabela-box .tabela-header div:nth-child(2) input {
+  background-color: var(--white-100);
+  outline-color: var(--black-200);
+  font-family: 'Roboto', sans-serif;
+  height: 1.8rem;
+  border-radius: 0.4rem;
+  border-top-right-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+
+.tabela-container .tabela-box .tabela-header div:nth-child(2) button {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--green-100)), to(var(--green-200)));
+  background: linear-gradient(var(--green-100), var(--green-200));
+  width: 4rem;
+  height: 1.8rem;
+  border: none;
+  border-radius: 0.4rem;
+  border-top-left-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+  color: var(--white-100);
+  cursor: pointer;
+}
+
+.tabela-container .tabela-box .tabela-main {
+  padding: 0.8rem;
+}
+
+table {
+  width: 100%;
+}
+
+table tr th {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  padding: 0.2rem 0rem;
+  border-bottom: 1px solid var(--white-300);
+  color: var(--black-200);
+}
+
+table tr {
+  border-top: 0.4rem solid var(--white-350);
+}
+
+table tr td {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  border-bottom: 1px solid var(--white-300);
+}
+
+table tr td:first-child {
+  width: 50%;
+}
+
+table tr td:last-child {
+  width: 10%;
+}
+
+table tr td .config-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+table tr td .config-box .view-btn {
+  width: 2rem;
+  height: 2rem;
+  color: var(--white-100);
+  border: none;
+  margin: 0.2rem;
+  border-radius: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+table tr td .config-box .view-btn:last-child {
+  margin-right: 0rem;
+}
+
+.btn-success {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--green-100)), to(var(--green-200)));
+  background: linear-gradient(var(--green-100), var(--green-200));
+}
+
+.tabela-container .tabela-box .tabela-footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.8rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-danger {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--red-100)), to(var(--red-200)));
+  background: linear-gradient(var(--red-100), var(--red-200));
+}
+
+.btn-able {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--blue-100)), to(var(--blue-200)));
+  background: linear-gradient(var(--blue-100), var(--blue-200));
+}
+
+@media only screen and (max-width: 800px) {
+  table tr th {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    padding: 0.2rem 0rem;
+    border-bottom: none;
+    color: var(--black-200);
+    display: none;
+  }
+  table tr {
+    border-top: 0.4rem solid var(--white-350);
+  }
+  table tr td {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    border-bottom: none;
+    display: none;
+  }
+  table tr td:first-child, th:first-child {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  table tr td:last-child, th:last-child {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 30%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .numbers-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .numbers-container .card {
+    margin: 1rem 2%;
+    width: 45%;
+  }
+  .numbers-container .card:first-child {
+    margin: 1rem 2%;
+  }
+  .numbers-container .card:last-child {
+    margin: 1rem 2%;
+  }
+  .numbers-container .card:nth-child(2n+1) {
+    margin-left: 0rem;
+  }
+  .numbers-container .card:nth-child(2n) {
+    margin-right: 0rem;
+  }
+  .numbers-box {
+    background-color: var(--white-100);
+    width: 100%;
+    height: 6rem;
+    border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .numbers-box h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--black-200);
+  }
+  .numbers-box h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black-500);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tabela-container .tabela-box .tabela-header {
+    background-color: var(--black-300);
+    padding: 0.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  .tabela-container .tabela-box .tabela-header div:nth-child(2) {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=usuarios.css.map */

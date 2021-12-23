@@ -13,11 +13,16 @@
   --black-200: #333333;
   --black-250: #404040;
   --black-300: #4D4D4D;
-  --black-400: #999999;
+  --black-400: #666666;
+  --black-450: #737373;
   --black-500: #808080;
   --green-100: #5CB85C;
   --green-200: #008000;
   --green-300: #005C00;
+  --red-100: #D89472;
+  --red-200: #92321F;
+  --blue-100: #72A1D8;
+  --blue-200: #1F5492;
 }
 
 html {
@@ -59,6 +64,10 @@ section .margin-top-2 {
   display: block;
 }
 
+.mobile-1200 {
+  display: none;
+}
+
 .mobile {
   display: none;
 }
@@ -66,6 +75,12 @@ section .margin-top-2 {
 @media only screen and (max-width: 1200px) {
   .desktop-1200 {
     display: none !important;
+  }
+  .mobile-1200 {
+    display: block !important;
+  }
+  .mobile-font {
+    font-size: 0.7rem !important;
   }
 }
 

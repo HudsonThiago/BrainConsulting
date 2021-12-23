@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/usuarios.css">
+
+    <script src="https://kit.fontawesome.com/7fd798150d.js" crossorigin="anonymous"></script>
+    <script src="assets/js/menu-mobile.js"></script>
+    <script src="assets/js/modal.js"></script>
+
+    <title>Usuários | Brainconsulting</title>
+</head>
+<body>
+    <header class="header">
+
+        <!-- NAV DESKTOP -->
+        <nav id="nav">
+            <div class="links">
+                <img class="logo" src="assets/imgs/logo.png" alt="logo">
+                <ul class="nav-mobile">
+                    <li><a href="dashboard.html"><i class="fas fa-th-large"></i>Desafios</a></li>
+                    <li><a href="editar-perfil-page.html"><i class="fas fa-user"></i> Perfil</a></li>
+                    <li class="link-active"><a href="usuarios.html"><i class="fas fa-cog"></i> Usuários</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="logout-btn">
+                <div>
+                    <img src="assets/imgs/icons/logout.svg" alt="logout">
+                    Sair
+                </div>
+            </a>
+        </nav>
+        <!-- FIM NAV DESKTOP -->
+
+        <!-- NAV MOBILE -->
+        <nav id="nav-mobile">
+            <div class="links">
+                <img class="logo" src="assets/imgs/logo.png" alt="logo">
+                <div class="logout-box">
+                    <a href="index.html">
+                        <img src="assets/imgs/icons/logout.svg" alt="logout">
+                    </a>
+                    <button id="btn-menu" class="btn-mobile">
+                        <div class="btn-hamburguer">
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <form action="" method="get">
+                <ul>
+                    <li><a href="dashboard.html"><div><i class="fas fa-th-large"></i> Desafios</div></a></li>
+                    <li><a href="editar-perfil-page.html"><div><i class="fas fa-user"></i> Perfil</div></a></li>
+                    <li><a href="usuarios.html"><div><i class="fas fa-cog"></i> Usuários</div></a></li>
+                </ul>
+            </form>
+        </nav>
+        <!-- FIM NAV MOBILE -->
+
+    </header>
+    
+    <!-- TÍTULO -->
+    <section class="title-section">
+        <div>
+            <a href="dashboard.html">
+                <h1><span>Brain</span>consulting</h1>
+                <div class="desktop-1200"><img src="assets/imgs/icons/seta.svg" alt="">
+                    <span>Voltar</span></div><div class="mobile-1200"><img src="assets/imgs/icons/seta.svg" alt=""><span><i class="fas fa-home"></i></span>
+                </div>
+            </a>
+            <h3>Nome de usuário</3h>
+        </div>
+    </section>
+    <!-- FIM TÍTULO -->
+
+    <!-- MAIN -->
+    <section class="main-section">
+        <div class="numbers-container">
+            <div class="card"><div class="numbers-box"><div><h3>Desafios</h3><h2>20</h2></div></div></div>
+            <div class="card"><div class="numbers-box"><div><h3>Alunos</h3><h2>50</h2></div></div></div>
+            <div class="card"><div class="numbers-box"><div><h3>Analistas</h3><h2>10</h2></div></div></div>
+            <div class="card"><div class="numbers-box"><div><h3>Empresas</h3><h2>08</h2></div></div></div>
+        </div>
+    </section>
+    <!-- FIM MAIN -->
+
+    <!-- DESAFIOS -->
+    <section class="main-section">
+        <div class="tabela-container">
+            <div class="tabela-box">
+                <form action="">
+                    <div class="tabela-header">
+                            <div>
+                                <div><i class="fas fa-th-large"></i></div>
+                                <h2>Desafios</h2>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Pesquisar..." maxlength="100">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                    </div>
+                </form>
+                <div class="tabela-main">
+                    <table>
+                        <tr>
+                            <th>Assunto</th>
+                            <th>Categoria</th>
+                            <th>Data</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Assunto do desafio...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success abrir-modal-view-desafio"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-danger"><i class="fas fa-exclamation-triangle"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Assunto do desafio...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success abrir-modal-view-desafio"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-able"><i class="fas fa-lock-open"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Assunto do desafio...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success abrir-modal-view-desafio"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-able"><i class="fas fa-lock-open"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Assunto do desafio...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success abrir-modal-view-desafio"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-danger"><i class="fas fa-exclamation-triangle"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Assunto do desafio...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success abrir-modal-view-desafio"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-danger"><i class="fas fa-exclamation-triangle"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Assunto do desafio...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success abrir-modal-view-desafio"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-able"><i class="fas fa-lock-open"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tabela-footer">
+                <!-- PAGINAÇÃO -->
+                    <a href="" class="page-box">
+                        <div class="disable">
+                            <p><</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div class="active">
+                            <p>1</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>2</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>3</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>4</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>5</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>...</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>12</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>></p>
+                        </div>
+                    </a>
+                <!-- FIM PAGINAÇÃO -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM DESAFIOS -->
+
+    <!-- ALUNOS -->
+    <section class="main-section">
+        <div class="tabela-container">
+            <div class="tabela-box">
+                <form action="">
+                    <div class="tabela-header">
+                            <div>
+                                <div><i class="fas fa-user"></i></div>
+                                <h2>Alunos</h2>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Pesquisar..." maxlength="100">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                    </div>
+                </form>
+                <div class="tabela-main">
+                    <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Categoria</th>
+                            <th>Data</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Nome do aluno...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-danger"><i class="fas fa-exclamation-triangle"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do aluno...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-able"><i class="fas fa-lock-open"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do aluno...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-able"><i class="fas fa-lock-open"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do aluno...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-danger"><i class="fas fa-exclamation-triangle"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do aluno...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-danger"><i class="fas fa-exclamation-triangle"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do aluno...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-able"><i class="fas fa-lock-open"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tabela-footer">
+                <!-- PAGINAÇÃO -->
+                <a href="" class="page-box">
+                    <div>
+                        <p><</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div>
+                        <p>1</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div>
+                        <p>...</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div>
+                        <p>8</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div>
+                        <p>9</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div>
+                        <p>10</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div>
+                        <p>11</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div class="active">
+                        <p>12</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div class="disable">
+                        <p>></p>
+                    </div>
+                </a>
+            <!-- FIM PAGINAÇÃO -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM ALUNOS -->
+
+    <!-- ANALISTA -->
+    <section class="main-section">
+        <div class="tabela-container">
+            <div class="tabela-box">
+                <form action="">
+                    <div class="tabela-header">
+                            <div>
+                                <div><i class="fas fa-user-graduate"></i></div>
+                                <h2>Analista</h2>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Pesquisar..." maxlength="100">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                    </div>
+                </form>
+                <div class="tabela-main">
+                    <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Categoria</th>
+                            <th>Data</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Nome do analista...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-danger"><i class="fas fa-exclamation-triangle"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do analista...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-able"><i class="fas fa-lock-open"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do analista...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-able"><i class="fas fa-lock-open"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do analista...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-danger"><i class="fas fa-exclamation-triangle"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do analista...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-danger"><i class="fas fa-exclamation-triangle"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do analista...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-able"><i class="fas fa-lock-open"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tabela-footer">
+                <!-- PAGINAÇÃO -->
+                    <a href="" class="page-box">
+                        <div>
+                            <p><</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>1</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>...</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>6</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>7</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div class="active">
+                            <p>8</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>9</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>10</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>...</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>18</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>></p>
+                        </div>
+                    </a>
+                <!-- FIM PAGINAÇÃO -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM ANALISTA -->
+
+    <!-- EMPRESA -->
+    <section class="main-section">
+        <div class="tabela-container">
+            <div class="tabela-box">
+                <form action="">
+                    <div class="tabela-header">
+                            <div>
+                                <div><i class="fas fa-user-tie"></i></div>
+                                <h2>Empresa</h2>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Pesquisar..." maxlength="100">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                    </div>
+                </form>
+                <div class="tabela-main">
+                    <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Categoria</th>
+                            <th>Data</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Nome da empresa...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-danger"><i class="fas fa-exclamation-triangle"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome da empresa...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-able"><i class="fas fa-lock-open"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome da empresa...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-able"><i class="fas fa-lock-open"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome da empresa...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-danger"><i class="fas fa-exclamation-triangle"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome da empresa...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-danger"><i class="fas fa-exclamation-triangle"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome da empresa...</td>
+                            <td>Engenharia</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success"><i class="fas fa-search"></i></button>
+                                    <button class="view-btn btn-able"><i class="fas fa-lock-open"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tabela-footer">
+                <!-- PAGINAÇÃO -->
+                    <a href="" class="page-box">
+                        <div class="disable">
+                            <p><</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div class="active">
+                            <p>1</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>2</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>3</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>4</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>5</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>...</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>12</p>
+                        </div>
+                    </a>
+                    <a href="" class="page-box">
+                        <div>
+                            <p>></p>
+                        </div>
+                    </a>
+                <!-- FIM PAGINAÇÃO -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM EMPRESA -->
+
+
+        <!-- MODAL DESAFIO -->
+        <div class="tela-escura fechar-modal-main main-modal-view-desafio" id="modal_view_desafio">
+            <div class="modal">
+                <div class="modal-header">
+    
+                </div>
+                <nav></nav>
+                <div class="modal-main">
+                    <p>EM CONSTRUÇÃO </p>
+                    
+                    <form action="usuarios.html">
+                        <div class="modal-btn-box">
+                            <button type="submit" class="botao-login">SIM</button>
+                            <button type="button" class="botao-login fechar-modal btn-danger">NÃO</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+    
+                </div>
+            </div>
+        </div>
+        <!-- FIM MODAL DESAFIO -->
+
+
+
+    <!-- FOOTER -->
+    <div class="divisao"></div>
+    <footer>
+        <p>Financial Bureau Consulting © 2021 - </p>
+        <a href="https://www.ejectufrn.com.br/">
+            <img src="assets/imgs/inicio/eject.svg" alt="eject">
+            <p>EJECT</p>
+        </a>
+    </footer>
+    <!-- FIM FOOTER -->
+</body>
+</html>

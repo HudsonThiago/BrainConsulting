@@ -122,6 +122,75 @@
   font-weight: 900;
 }
 
+.desafio-container .search-container {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0rem 3.6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.desafio-container .search-container select {
+  width: 31%;
+  height: 2rem;
+  outline-color: var(--black-200);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  padding: 0rem 0.4rem;
+  border: none;
+  border-radius: 0.6rem;
+  -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.desafio-container .search-container select option {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+.desafio-container .search-container .search-box {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0.6rem;
+  -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.desafio-container .search-container .search-box input {
+  width: 85%;
+  height: 2rem;
+  outline-color: var(--black-200);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  padding-left: 0.4rem;
+  border: none;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+}
+
+.desafio-container .search-container .search-box button {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--green-100)), to(var(--green-200)));
+  background: linear-gradient(var(--green-100), var(--green-200));
+  color: var(--white-100);
+  width: 15%;
+  height: 2rem;
+  border: none;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  cursor: pointer;
+}
+
 .desafio-container {
   background-color: var(--white-300);
   width: 100%;
@@ -154,8 +223,8 @@
 
 .desafio-container .main-desafio-container a {
   display: inline-block;
-  width: 30%;
-  height: 18rem;
+  width: 17rem;
+  height: 16rem;
   border-radius: 0.6rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -173,8 +242,9 @@
 
 .card-desafio .card-img {
   background-color: var(--white-200);
+  background-size: 100% 100%;
   width: 100%;
-  height: 12rem;
+  height: 9rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 0.3rem;
@@ -187,6 +257,8 @@
 }
 
 .card-desafio .card-img h3 {
+  -webkit-text-stroke-width: 0.04rem;
+  -webkit-text-stroke-color: var(--black-500);
   color: var(--black-200);
   font-weight: 900;
   font-size: 1.4rem;
@@ -208,6 +280,7 @@
 
 .card-desafio .card-status p {
   margin: 0rem;
+  color: #FFD466;
   font-size: 0.8rem;
   margin-top: 0.2rem;
   margin-bottom: 0rem;
@@ -216,15 +289,17 @@
 .desafio-container .paginacao-desafio-container {
   width: 100%;
   height: 4rem;
-  padding-left: 3.6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .page-box {
-  height: 2.4rem;
-  width: 2.4rem;
+  height: 2rem;
+  width: 2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-right: 0.4rem;
@@ -246,8 +321,8 @@
 
 .page-box div {
   background-color: var(--black-300);
-  height: 2.6rem;
-  width: 2.4rem;
+  height: 2.2rem;
+  width: 2rem;
   border-radius: 0.6rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -267,7 +342,7 @@
 .page-box div p {
   color: white;
   margin: 0rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 700;
 }
 
@@ -308,6 +383,21 @@
   font-size: 0.8rem;
 }
 
+.btn-danger {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--red-100)), to(var(--red-200)));
+  background: linear-gradient(var(--red-100), var(--red-200));
+}
+
+.btn-able {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--blue-100)), to(var(--blue-200)));
+  background: linear-gradient(var(--blue-100), var(--blue-200));
+}
+
+.btn-desable {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--white-350)), to(var(--black-450)));
+  background: linear-gradient(var(--white-350), var(--black-450));
+}
+
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
   .title-section .button-box {
     width: 48%;
@@ -318,8 +408,8 @@
   }
   .desafio-container .main-desafio-container a {
     display: inline-block;
-    width: 46%;
-    height: 18rem;
+    width: 17rem;
+    height: 16rem;
     border-radius: 0.6rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -371,8 +461,8 @@
   }
   .desafio-container .main-desafio-container a {
     display: inline-block;
-    width: 100%;
-    height: 18rem;
+    width: 17rem;
+    height: 16rem;
     border-radius: 0.6rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -394,17 +484,17 @@
             justify-content: center;
   }
   .page-box {
-    height: 1.8rem;
-    width: 1.6rem;
+    height: 1.6rem;
+    width: 1.4rem;
     margin-right: 0.2rem;
     text-decoration: none;
     cursor: pointer;
   }
   .page-box div {
     background-color: var(--black-300);
-    height: 1.8rem;
-    width: 1.6rem;
-    border-radius: 0.6rem;
+    height: 1.6rem;
+    width: 1.4rem;
+    border-radius: 0.4rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: 0.2rem solid var(--black-250);
@@ -429,8 +519,40 @@
   .page-box div p {
     color: white;
     margin: 0rem;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     font-weight: 700;
+  }
+  .desafio-container .search-container {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0rem 6%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .desafio-container .search-container select {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .desafio-container .search-container .search-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 0.6rem;
+    -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+  }
+  .desafio-container .search-container .search-box input {
+    width: 80%;
+    height: 2rem;
+  }
+  .desafio-container .search-container .search-box button {
+    width: 20%;
+    height: 2rem;
   }
 }
 /*# sourceMappingURL=dashboard.css.map */
