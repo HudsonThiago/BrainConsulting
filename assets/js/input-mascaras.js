@@ -1,15 +1,13 @@
 window.addEventListener("load", main)
 
 function main(){
-    let cpf = document.querySelectorAll('.cpf');
+    //cpf do aluno 
+    $("#cpf_aluno").mask("000.000.000-00")
+
+    //cnpj da empresa
+    $("#cnpj_empresa").mask("00.000.000/0000-00")
+
+    //cpf do analista 
+    $("#cpf_analista").mask("000.000.000-00")
     
-    for(let i=0;i<cpf.length;i++){
-        cpf[i].addEventListener('keydown', ()=>{
-            if(cpf[i].value.length==3 || cpf[i].value.length==7){
-                cpf[i].value += "."
-            } else if(cpf[i].value.length==11){
-                cpf[i].value += "-"
-            }
-        })
-    }    
 }

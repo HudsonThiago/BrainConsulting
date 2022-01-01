@@ -315,6 +315,25 @@
     font-size: 0.8rem;
 }
 
+.select-perfil {
+    background-color: var(--white-300);
+    font-family: 'Roboto', sans-serif;
+    color: var(--black-200);
+    box-sizing: border-box;
+    font-size: 1rem;
+    height: 2.4rem;
+    padding: 0.4rem;
+    width: 100%;
+    border: 1px solid var(--white-400);
+    border-radius: 0.6rem;
+    outline-color: var(--black-200);
+}
+
+.select-perfil option {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black-200);
+}
+
 .btn-danger {
     background: linear-gradient( var(--red-100), var(--red-200));
 }

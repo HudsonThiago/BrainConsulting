@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <script src="https://kit.fontawesome.com/7fd798150d.js" crossorigin="anonymous"></script>
     <script src="assets/js/menu-mobile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.mask.js"></script>
+    <script src="assets/js/input-mascaras.js"></script>
     <title>Editar perfil | Brainconsulting</title>
 </head>
 <body>
@@ -86,23 +89,25 @@
     <section class="main-section">
         <div class="c1">
             <p>Usuário</p>
-            <input type="text" name="" maxlength="100" disabled>
+            <input type="text" name="" maxlength="100" value="usuario" disabled>
             <p>Nome</p>
-            <input type="text" name="" maxlength="100" disabled>
+            <input type="text" name="" maxlength="100" value="Fulano" disabled>
             <p>Instituição superior</p>
-            <input type="text" name="" disabled>
+            <input type="text" name="" value="UFRN" disabled>
             <p>Período de ingresso</p>
-            <input type="text" name="" disabled>
+            <input type="text" name="" value="2020.1" disabled>
+            <p>Telefone para contato</p>
+            <input type="text" name="" placeholder="+55 (DDD) 00000 0000" value="+55 (084) 99999 9999" disabled>
         </div>
         <div class="c2">
             <p>Email</p>
-            <input type="email" name="" maxlength="256" disabled>
+            <input type="email" name="" maxlength="256" value="fulano@gmail.com" disabled>
             <p>CPF</p>
-            <input class="cpf" type="text" name="" maxlength="14" disabled>
+            <input class="cpf" type="text" name="" maxlength="14" value="999.999.999-99" id="cpf_aluno" disabled>
             <p>Curso</p>
-            <input type="text" name="" disabled>
+            <input type="text" name="" value="Interdisciplinar em Ciências e Tecnologia" disabled>
             <p>Idioma</p>
-            <input type="text" name="" disabled>
+            <input type="text" name="" value="Português" disabled>
         </div>
     </section>
     <!-- FIM MAIN -->

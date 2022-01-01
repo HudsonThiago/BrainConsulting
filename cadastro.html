@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    
     <script src="assets/js/menu-mobile.js"></script>
-    <!--<script src="assets/js/input-mascaras.js"></script>-->
     <script src="https://kit.fontawesome.com/7fd798150d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.mask.js"></script>
+    <script src="assets/js/input-mascaras.js"></script>
     <title>Cadastro | Brainconsulting</title>
 </head>
 <body>
@@ -104,12 +107,14 @@
                 <input type="password" name="" maxlength="100">
                 <p>Confirmação de Senha</p>
                 <input type="password" name="" maxlength="100">
-                <p>Nome</p>
+                <p>Nome Completo</p>
                 <input type="text" name="" maxlength="100">
                 <p>Data de nascimento</p>
                 <input type="date" name="">
                 <p>CPF</p>
-                <input class="cpf" type="text" name="" maxlength="14">
+                <input class="cpf" type="text" name="" maxlength="14" id="cpf_aluno">
+                <p>Telefone para contato</p>
+                <input type="text" name="" placeholder="+55 (DDD) 00000 0000">
                 <p>Instituição superior</p>
                 <input type="text" name="">
                 <p>Curso</p>
@@ -122,7 +127,8 @@
             </form>
         </div>
 
-        <!-- (EMPRESA)
+        <!-- (EMPRESA) --> 
+        <!-- 
         <div class="c1">
             <form action="index.html#modal_cadastro">
                 <p>Usuário</p>
@@ -138,17 +144,18 @@
                 <p>Razão social</p>
                 <input type="text" name="">
                 <p>CNPJ</p>
-                <input type="text" name="">
+                <input type="text" name="" id="cnpj_empresa">
                 <p>Telefone da empresa</p>
-                <input type="text" name="">
+                <input type="text" name="" placeholder="+55 (DDD) 00000 0000">
                 <p>Telefone para contato</p>
-                <input type="text" name="">
+                <input type="text" name="" placeholder="+55 (DDD) 00000 0000">
                 <button type="submit" class="botao-login">Cadastrar</button>
             </form>
         </div>
         -->
 
-        <!-- (ANALISTA)
+        <!-- (ANALISTA) --> 
+        <!-- 
         <div class="c1">
             <form action="index.html#modal_cadastro">
                 <p>Usuário</p>
@@ -159,10 +166,12 @@
                 <input type="password" name="">
                 <p>Confirmação de Senha</p>
                 <input type="password" name="">
-                <p>Nome</p>
+                <p>Nome Completo</p>
                 <input type="text" name="">
                 <p>CPF</p>
-                <input class="cpf" type="text" name="" maxlength="14">
+                <input class="cpf" type="text" name="" maxlength="14" id="cpf_analista">
+                <p>Telefone para contato</p>
+                <input type="text" name="" placeholder="+55 (DDD) 00000 0000">
                 <p>Ano de conclusão da graduação</p>
                 <input type="text" name="">
                 <p>Ano de conclusão do mestrado</p>
