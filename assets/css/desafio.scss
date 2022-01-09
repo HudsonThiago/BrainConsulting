@@ -81,6 +81,74 @@
     background: linear-gradient( var(--blue-100), var(--blue-200));
 }
 
+.m-1 {
+    margin-top: 1rem;
+}
+
+.w-100 {
+    width: 100%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+.w-50rem {
+    width: 50rem;
+}
+
+.h-25rem {
+    height: 30rem;
+}
+
+.overflow {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 15rem;
+}
+
+.overflow h2 {
+    font-weight: 700;
+    text-align: center;
+    padding: 0.6rem 0rem;
+    border-bottom: 0.2rem solid var(--white-300);
+}
+
+.main-section .c1 p,.main-section .c2 p {
+    text-align: left;
+}
+
+.overflow::-webkit-scrollbar {
+    width: 1.2rem;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+    margin-left: 0.4rem;
+    background-color: var(--black-300);
+    border-radius: 20px;
+    border: 0.4rem solid var(--white-100);
+}
+
+.box-info {
+    background: linear-gradient( var(--black-500), var(--black-300));
+    margin: 1rem auto;
+    padding: 1rem 0rem;
+    width: 98%;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-info:last-child {
+    margin-bottom: 1rem;
+}
+
+.box-info p {
+    color: var(--white-100);
+    margin: 0rem;
+    padding: 0rem;
+}
+
 @media only screen and (max-width: 800px) {
     
 
@@ -94,4 +162,28 @@
         margin: 0rem auto;
         margin-top: 1rem;
     }
+
+    .box-info p {
+        font-size: 1rem;
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    .mobile-w {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .overflow {
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 16rem;
+    }
+
+    input {
+        margin-left: 0rem;
+    }    
 }

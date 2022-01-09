@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <link rel="stylesheet" href="assets/css/desafio.css">
+
     <script src="https://kit.fontawesome.com/7fd798150d.js" crossorigin="anonymous"></script>
     <script src="assets/js/menu-mobile.js"></script>
     <script src="assets/js/modal.js"></script>
+
     <title>Desafio | Brainconsulting</title>
 </head>
 <body>
@@ -80,16 +82,27 @@
         <div class="button-box">
             <a class="btn-edit" href="#"><button type="submit" class="botao-login mobile-font"><i class="fas fa-pencil-alt"></i> Editar desafio</button></a>
             
-            <a class="btn-edit arquivar_desafio" href="#"><button type="submit" class="botao-login btn-danger mobile-font"><i class="fas fa-exclamation-triangle"></i> Arquivar desafio</button></a>
+            <a class="btn-edit arquivar_desafio"><button type="button" class="botao-login btn-danger mobile-font"><i class="fas fa-exclamation-triangle"></i> Arquivar desafio</button></a>
             
             <!-- APARECE QUANDO O ADMINISTRADOR OU A EMPRESA ARQUIVA O DESAFIO-->
             <!--
-            <a class="btn-edit" href="#"><button type="submit" class="botao-login btn-able mobile-font"><i class="fas fa-lock-open"></i> Abrir desafio</button></a>
+            <a class="btn-edit" id="modal_abrir_desafio"><button type="button" class="botao-login btn-able mobile-font"><i class="fas fa-lock-open"></i> Abrir desafio</button></a>
             -->
         </div>
     </section>
     <!-- FIM TÍTULO -->
-    
+
+
+
+    <!-- BOTÃO -->
+    <!-- Só aparece para o usuário ADMINISTRADOR-->
+    <section class="title-section m-1">
+        <button id="btn-info" type="button" class="botao-login mobile-font m-1 mobile-w"><i class="fas fa-search"></i> Informações</button>
+    </section>
+    <!-- FIM BOTÃO -->
+
+
+
     <!-- MAIN -->
 
     <div class="divisao-2"></div>
@@ -176,7 +189,7 @@
         <button class="status-box mobile-font">Aguardando aprovação</button>
         <form action=""> 
             <div>   
-                <button class="status-box btn-success mobile-font">Enviar comentário</button>
+                <button type="submit" class="status-box btn-success mobile-font">Enviar comentário</button>
                 <button class="status-box btn-success mobile-font">Finalizar</button>
             </div>
         </form>
@@ -212,7 +225,7 @@
             </div>
             <nav></nav>
             <div class="modal-main">
-                <p>Ao arquivar um desafio não será mais possível ver ele no painel principal, tem certeza que deseja fazer isso?</p>
+                <p>Ao <span style="color: var(--red-150); font-weight: 700;">arquivar</span> um desafio não será mais possível ver ele no painel principal, tem certeza que deseja fazer isso?</p>
                 
                 <form action="desafio.html">
                     <div class="modal-btn-box">
@@ -227,6 +240,167 @@
         </div>
     </div>
     <!-- FIM ARQUIVAR DESAFIO -->
+
+
+
+    <!-- MODAL ABRIR DESAFIO -->
+    <div class="tela-escura fechar-modal-main" id="modal_abrir_desafio_main">
+        <div class="modal">
+            <div class="modal-header">
+
+            </div>
+            <nav></nav>
+            <div class="modal-main">
+                <p>Ao <span style="color: var(--blue-150); font-weight: 700;">abrir</span> um desafio ele estará visível para alunos e analistas, tem certeza que deseja fazer isso?</p>
+                
+                <form action="desafio.html">
+                    <div class="modal-btn-box">
+                        <button type="submit" class="botao-login">SIM</button>
+                        <button type="button" class="botao-login fechar-modal btn-danger">NÃO</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+    <!-- FIM ABRIR DESAFIO -->
+
+
+
+    <!-- MODAL INFORMAÇÕES -->
+    <div class="tela-escura fechar-modal-main" id="info-main">
+        <div class="modal h-25rem">
+            <div class="modal-header">
+            </div>
+            <nav></nav>
+            <div class="modal-main">
+                <div class="overflow">
+                    <div class="w-100"><h2>Informações da empresa</h2></div>
+                    <div class="main-section w-100">
+                        <div class="c1">
+                            <p>Usuário</p>
+                            <input type="text" name="" maxlength="100" value="usuario" disabled>
+                            <p>Nome Fantasia</p>
+                            <input type="text" name="" maxlength="100" value="Fulano" disabled>
+                            <p>Telefone da empresa</p>
+                            <input type="text" name="" placeholder="+55 (DDD) 00000 0000" value="+55 (084) 99999 9999" disabled>
+                            <p>Data de cadastramento</p>
+                            <input type="date" name="" disabled>
+                            <p>Idioma</p>
+                            <input type="text" name="" value="Português" disabled>
+                        </div>
+                        <div class="c2">
+                            <p>Email</p>
+                            <input type="email" name="" maxlength="256" value="fulano@gmail.com" disabled>
+                            <p>CNPJ</p>
+                            <input class="cpf" type="text" name="" value="99.999.999/0001-99" id="cpf_aluno" disabled>
+                            <p>Razão socia</p>
+                            <input type="text" name="" value="razão social" disabled>
+                            <p>Telefone para contato</p>
+                            <input type="text" name="" placeholder="+55 (DDD) 00000 0000" value="+55 (084) 99999 9999" disabled>
+                        </div>
+                    </div>
+
+                    <div class="w-100 m-1"><h2>Informações do analista</h2></div>
+
+                    <!-- Aparece as informações do analista se o analista aceitar o desafio -->
+                    <!--
+                    <div class="main-section w-100">
+                        <div class="c1">
+                            <p>Usuário</p>
+                            <input type="text" name="" maxlength="100" value="usuario" disabled>
+                            <p>Nome</p>
+                            <input type="text" name="" maxlength="100" value="Fulano" disabled>
+                            <p>CPF</p>
+                            <input class="cpf" type="text" name="" maxlength="14" value="999.999.999-99" id="cpf_aluno" disabled>
+                            <p>conclusão do mestrado</p>
+                            <input type="text" name="" disabled>
+                            <p>Data de cadastramento</p>
+                            <input type="date" name="" disabled>
+                            <p>Comprovante do conselho</p>
+                            <a href="(  link do pdf  )" target="blank"><button class="btn-comprovante"><p>Fulano.pdf</p><i class="far fa-file-pdf"></i></button></a>
+                        </div>
+                        <div class="c2">
+                            <p>Email</p>
+                            <input type="email" name="" maxlength="256" value="fulano@gmail.com" disabled>
+                            <p>Telefone para contato</p>
+                            <input type="text" name="" placeholder="+55 (DDD) 00000 0000" value="+55 (084) 99999 9999" disabled>
+                            <p>conclusão da graduação</p>
+                            <input type="text" name="" disabled>
+                            <p>Período de doutorado</p>
+                            <input type="text" name="" disabled>
+                            <p>Idioma</p>
+                            <input type="text" name="" value="Português" disabled>
+                        </div>
+                    </div>
+                    -->
+                    <!-- ELSE -->
+                    <div class="main-section w-100 box-info">
+                        <p>O analista ainda não aceitou o desafio</p>
+                    </div>
+                    <!-- FIM ANALISTA-->
+
+
+
+                    <div class="w-100 m-1"><h2>Informações do aluno</h2></div>
+
+                    <!-- Aparece as informações do analista se o analista aceitar o desafio -->
+                    <!--
+                    <div class="main-section w-100">
+                        <div class="c1">
+                            <p>Usuário</p>
+                            <input type="text" name="" maxlength="100" value="usuario" disabled>
+                            <p>Nome</p>
+                            <input type="text" name="" maxlength="100" value="Fulano" disabled>
+                            <p>Instituição superior</p>
+                            <input type="text" name="" value="UFRN" disabled>
+                            <p>Período de ingresso</p>
+                            <input type="text" name="" value="2020.1" disabled>
+                            <p>Data de nascimento</p>
+                            <input type="date" name="" disabled>
+                            <p>Comprovante de matrícula</p>
+                            <a href="(  link do pdf  )" target="blank"><button class="btn-comprovante"><p>Fulano.pdf</p><i class="far fa-file-pdf"></i></button></a>
+                        </div>
+                        <div class="c2">
+                            <p>Email</p>
+                            <input type="email" name="" maxlength="256" value="fulano@gmail.com" disabled>
+                            <p>CPF</p>
+                            <input class="cpf" type="text" name="" maxlength="14" value="999.999.999-99" id="cpf_aluno" disabled>
+                            <p>Curso</p>
+                            <input type="text" name="" value="Interdisciplinar em Ciências e Tecnologia" disabled>
+                            <p>Telefone para contato</p>
+                            <input type="text" name="" placeholder="+55 (DDD) 00000 0000" value="+55 (084) 99999 9999" disabled>
+                            <p>Data de cadastramento</p>
+                            <input type="date" name="" disabled>
+                            <p>Idioma</p>
+                            <input type="text" name="" value="Português" disabled>
+                        </div>
+                    </div>
+                    -->
+                    <!-- ELSE -->
+                    <div class="main-section w-100 box-info">
+                        <p>O aluno ainda não aceitou o desafio</p>
+                    </div>
+                    <!-- FIM ANALISTA-->
+
+
+
+                </div>
+                <form action="usuarios.html">
+                    <div class="modal-btn-box">
+                        <button type="button" class="botao-login fechar-modal btn-sucess">Voltar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+    <!-- FIM MODAL INFORMAÇÕES -->
+
 
 
 

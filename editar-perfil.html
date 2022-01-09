@@ -85,39 +85,125 @@
     <!-- FIM TÍTULO -->
     
     <!-- MAIN -->
-    <form action="">
-        <section class="main-section">
-            <div class="c1">
-                <p>Usuário</p>
-                <input type="text" name="" maxlength="100" value="usuario" disabled>
-                <p>Nome</p>
-                <input type="text" name="" maxlength="100" value="Fulano" disabled>
-                <p>Instituição superior</p>
-                <input type="text" name="" value="UFRN" disabled>
-                <p>Período de ingresso</p>
-                <input type="text" name="" value="2020.1" disabled>
-                <p>Telefone para contato</p>
-                <input type="text" name="" placeholder="+55 (DDD) 00000 0000" value="+55 (084) 99999 9999" disabled>
-            </div>
-            <div class="c2">
-                <p>Email</p>
-                <input type="email" name="" maxlength="256" value="fulano@gmail.com" disabled>
-                <p>CPF</p>
-                <input class="cpf" type="text" name="" maxlength="14" value="999.999.999-99" id="cpf_aluno" disabled>
-                <p>Curso</p>
-                <input type="text" name="" value="Interdisciplinar em Ciências e Tecnologia" disabled>
-                <p>Idioma</p>
-                <select class="select-perfil" name="" id="">
-                    <option value="portugues">Português</option>
-                    <option value="ingles">Inglês</option>
-                </select>
-            </div>
-        </section>
-        <section class="main-section">
-            <button type="submit" class="botao-login margin-top-2">Salvar alterações</button>
-        </section>
-    </form>
+
+
+        <!-- INFORMAÇÕES DO ALUNO -->
+        <form action="">
+            <section class="main-section">
+                <div class="c1">
+                    <p>Usuário</p>
+                    <input type="text" name="" maxlength="100" value="usuario">
+                    <p>Nome Completo</p>
+                    <input type="text" name="" maxlength="100" value="Fulano">
+                    <p>Instituição superior</p>
+                    <input type="text" name="" value="UFRN">
+                    <p>Período de ingresso</p>
+                    <input type="text" name="" value="2020.1">
+                    <p>Data de nascimento</p>
+                    <input type="date" name="" value="2000-01-01">
+                </div>
+                <div class="c2">
+                    <p>Email</p>
+                    <input type="email" name="" maxlength="256" value="fulano@gmail.com">
+                    <p>CPF</p>
+                    <input class="cpf" type="text" name="" maxlength="14" value="999.999.999-99" id="cpf_aluno">
+                    <p>Curso</p>
+                    <input type="text" name="" value="Interdisciplinar em Ciências e Tecnologia">
+                    <p>Telefone para contato</p>
+                    <input type="text" name="" placeholder="+55 (DDD) 00000 0000" value="+55 (084) 99999 9999">
+                    <p>Idioma</p>
+                    <select class="select-perfil" name="" id="">
+                        <option value="portugues">Português</option>
+                        <option value="ingles">Inglês</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="main-section">
+                <button type="submit" class="botao-login margin-top-2">Salvar alterações</button>
+            </section>
+        </form>
+        <!-- FIM INFORMAÇÕES DO ALUNO -->
+
+        <!-- INFORMAÇÕES DO ANALISTA -->
+        <!--
+        <form action="">
+            <section class="main-section">
+                <div class="c1">
+                    <p>Usuário</p>
+                    <input type="text" name="" maxlength="100" value="usuario">
+                    <p>Nome Completo</p>
+                    <input type="text" name="" maxlength="100" value="Fulano">
+                    <p>Telefone para contato</p>
+                    <input type="text" name="" placeholder="+55 (DDD) 00000 0000" value="+55 (084) 99999 9999">
+                    <p>Ano de conclusão do mestrado</p>
+                    <input type="text" name="" value="2020.2">
+                    <p>Registro do conselho</p>
+                    <input type="text" name="" value="registro do conselho">
+                </div>
+                <div class="c2">
+                    <p>Email</p>
+                    <input type="email" name="" maxlength="256" value="fulano@gmail.com">
+                    <p>CPF</p>
+                    <input class="cpf" type="text" name="" maxlength="14" value="999.999.999-99" id="cpf_analista">
+                    <p>Ano de conclusão da graduação</p>
+                    <input type="text" name="" value="2022.2">
+                    <p>Período de doutorado</p>
+                    <input type="text" name="" value="2020.2">
+                    <p>Idioma</p>
+                    <select class="select-perfil" name="" id="">
+                        <option value="portugues">Português</option>
+                        <option value="ingles">Inglês</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="main-section">
+                <button type="submit" class="botao-login margin-top-2">Salvar alterações</button>
+            </section>
+        </form>
+        -->
+        <!-- FIM INFORMAÇÕES DO ANALISTA -->
+    
+    
+        <!-- INFORMAÇÕES DA EMPRESA -->
+        <!--
+        <form action="">
+            <section class="main-section">
+                <div class="c1">
+                    <p>Usuário</p>
+                    <input type="text" name="" maxlength="100" value="usuario" >
+                    <p>Nome Fantasia</p>
+                    <input type="text" name="" maxlength="100" value="Fulano" >
+                    <p>Telefone da empresa</p>
+                    <input type="text" name="" placeholder="+55 (DDD) 00000 0000" value="+55 (084) 99999 9999" >
+                    <p>CNPJ</p>
+                    <input type="text" name="" value="99.999.999/0001-99" id="cnpj_empresa" >
+                </div>
+                <div class="c2">
+                    <p>Email</p>
+                    <input type="email" name="" maxlength="256" value="fulano@gmail.com" >
+                    <p>Razão social</p>
+                    <input type="text" name="" value="razão social" >
+                    <p>Telefone para contato</p>
+                    <input type="text" name="" placeholder="+55 (DDD) 00000 0000" value="+55 (084) 99999 9999" >
+                    <p>Idioma</p>
+                    <select class="select-perfil" name="" id="">
+                        <option value="portugues">Português</option>
+                        <option value="ingles">Inglês</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="main-section">
+                <button type="submit" class="botao-login margin-top-2">Salvar alterações</button>
+            </section>
+        </form>
+        -->
+        <!-- FIM INFORMAÇÕES DA EMPRESA -->
+        
     <!-- FIM MAIN -->
+
 
 
     <!-- FOOTER -->

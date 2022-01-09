@@ -29,6 +29,8 @@ function main(){
         })
     } 
 
+
+
     /*
     ------------------------------------------------------------------------
     usuarios.html
@@ -172,4 +174,26 @@ function main(){
                     abrir_empresa_main[i].style.opacity = 1;
                 })
             }  
+
+    /*
+    ------------------------------------------------------------------------
+    desafio.html
+    ------------------------------------------------------------------------
+    */
+
+    const modal_abrir_desafio = document.querySelector('#modal_abrir_desafio');
+    const modal_abrir_desafio_main = document.querySelector('#modal_abrir_desafio_main');
+
+    modal_abrir_desafio.addEventListener('click', ()=>{
+        modal_abrir_desafio_main.style.visibility = "visible";
+        modal_abrir_desafio_main.style.opacity = 1;
+    })
+
+    const btn_info = document.querySelector('#btn-info');
+    const info_main = document.querySelector('#info-main');
+
+    btn_info.addEventListener('click', ()=>{
+        info_main.style.visibility = "visible";
+        info_main.style.opacity = 1;
+    })
 }
