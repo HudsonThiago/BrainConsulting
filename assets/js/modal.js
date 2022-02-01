@@ -9,12 +9,6 @@ function main(){
         fechar_modal[i].addEventListener('click', ()=>{
             fechar_modal_main[i].style.visibility = "hidden";
             fechar_modal_main[i].style.opacity = 0;
-
-            // if(cpf[i].value.length==3 || cpf[i].value.length==7){
-            //     cpf[i].value += "."
-            // } else if(cpf[i].value.length==11){
-            //     cpf[i].value += "-"
-            // }
         })
     } 
     
@@ -181,19 +175,22 @@ function main(){
     ------------------------------------------------------------------------
     */
 
-    const modal_abrir_desafio = document.querySelector('#modal_abrir_desafio');
-    const modal_abrir_desafio_main = document.querySelector('#modal_abrir_desafio_main');
+    const modal_abrir_desafio = document.getElementById('modal_abrir_desafio');
+    const modal_abrir_desafio_main = document.getElementById('modal_abrir_desafio_main');
 
-    modal_abrir_desafio.addEventListener('click', ()=>{
-        modal_abrir_desafio_main.style.visibility = "visible";
-        modal_abrir_desafio_main.style.opacity = 1;
-    })
+    if (modal_abrir_desafio) {
+        modal_abrir_desafio.addEventListener('click', ()=>{
+            modal_abrir_desafio_main.style.visibility = "visible";
+            modal_abrir_desafio_main.style.opacity = 1;
+        })
+    }
 
-    const btn_info = document.querySelector('#btn-info');
-    const info_main = document.querySelector('#info-main');
-
-    btn_info.addEventListener('click', ()=>{
-        info_main.style.visibility = "visible";
-        info_main.style.opacity = 1;
-    })
+    const btn_info = document.getElementById('btn-info');
+    const info_main = document.getElementById('info-main');
+    if (btn_info) {
+        btn_info.addEventListener('click', ()=>{
+            info_main.style.visibility = "visible";
+            info_main.style.opacity = 1;
+        })
+    }
 }
