@@ -81,6 +81,10 @@
     background: linear-gradient( var(--blue-100), var(--blue-200));
 }
 
+.m-0 {
+    margin-top: 0rem;
+}
+
 .m-1 {
     margin-top: 1rem;
 }
@@ -149,8 +153,48 @@
     padding: 0rem;
 }
 
+.btn-desafio {
+    background: linear-gradient( var(--green-100), var(--green-200));
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white-100);
+    width: 10rem;
+    box-sizing: border-box;
+    padding: 0.4rem;
+    min-height: 2rem;
+    margin-top: 0rem;
+    border: 0px none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.3);
+}
+
 @media only screen and (max-width: 800px) {
-    
+
+    .modal-main .overflow .main-section {
+        margin: 0rem;
+        padding: 0rem;
+        width: 100%;
+    }
+
+    .modal-main .overflow {
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 16rem;
+    }
+
+    .tabela-container .tabela-box .tabela-header {
+        background-color: var(--black-300);
+        padding: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
 
     .buttons-section {
         width: 90%;
@@ -175,13 +219,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-
-    .overflow {
-        box-sizing: border-box;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        height: 16rem;
-    }
 
     input {
         margin-left: 0rem;

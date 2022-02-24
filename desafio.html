@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <link rel="stylesheet" href="assets/css/desafio.css">
+    <link rel="stylesheet" href="assets/css/usuarios.css">
 
     <script src="https://kit.fontawesome.com/7fd798150d.js" crossorigin="anonymous"></script>
     <script src="assets/js/menu-mobile.js"></script>
@@ -95,9 +96,8 @@
 
 
     <!-- BOTÃO -->
-    <!-- Só aparece para o usuário ADMINISTRADOR-->
     <section class="title-section m-1">
-        <button id="btn-info" type="button" class="botao-login mobile-font m-1 mobile-w"><i class="fas fa-search"></i> Informações</button>
+        
     </section>
     <!-- FIM BOTÃO -->
 
@@ -105,7 +105,156 @@
 
     <!-- MAIN -->
 
+
+
+    <!-- ALUNOS -->
+    <!-- Só aparece para o usuário ADMINISTRADOR-->
+    <section class="main-section" id="sec-lista">
+        <div class="tabela-container">
+            <div class="tabela-box">
+                <form action="">
+                    <div class="tabela-header">
+                            <div>
+                                <div><i class="fas fa-user"></i></div>
+                                <h2>Respostas</h2>
+                            </div>
+                            <button id="btn-info" type="button" class="mobile-font btn-desafio mobile-w"><i class="fas fa-search"></i> Informações</button>
+                    </div>
+                </form>
+                <div class="tabela-main">
+                    <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Data</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Nome do aluno...</td>
+                            <td>999.999.999-99</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success modal_abrir_aluno_info abrir-modal-view-aluno"><i class="fas fa-search"></i></button>
+                                    <a href="#"><button class="view-btn btn-able"><i class="fas fa-comment"></i></i></button></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do aluno...</td>
+                            <td>999.999.999-99</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success modal_abrir_aluno_info"><i class="fas fa-search"></i></button>
+                                    <a href="#"><button class="view-btn btn-able"><i class="fas fa-comment"></i></i></button></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do aluno...</td>
+                            <td>999.999.999-99</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success modal_abrir_aluno_info"><i class="fas fa-search"></i></button>
+                                    <a href="#"><button class="view-btn btn-able"><i class="fas fa-comment"></i></i></button></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do aluno...</td>
+                            <td>999.999.999-99</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success modal_abrir_aluno_info"><i class="fas fa-search"></i></button>
+                                    <a href="#"><button class="view-btn btn-able"><i class="fas fa-comment"></i></i></button></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do aluno...</td>
+                            <td>999.999.999-99</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success modal_abrir_aluno_info"><i class="fas fa-search"></i></button>
+                                    <a href="#"><button class="view-btn btn-able"><i class="fas fa-comment"></i></i></button></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome do aluno...</td>
+                            <td>999.999.999-99</td>
+                            <td>12/12/2021</td>
+                            <td>
+                                <div class="config-box">
+                                    <button class="view-btn btn-success modal_abrir_aluno_info"><i class="fas fa-search"></i></button>
+                                    <a href="#"><button class="view-btn btn-able"><i class="fas fa-comment"></i></i></button></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tabela-footer">
+                <!-- PAGINAÇÃO -->
+                <a href="" class="page-box">
+                    <div>
+                        <p><</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div>
+                        <p>1</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div>
+                        <p>...</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div>
+                        <p>8</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div>
+                        <p>9</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div>
+                        <p>10</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div>
+                        <p>11</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div class="active">
+                        <p>12</p>
+                    </div>
+                </a>
+                <a href="" class="page-box">
+                    <div class="disable">
+                        <p>></p>
+                    </div>
+                </a>
+            <!-- FIM PAGINAÇÃO -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM ALUNOS -->
+
+
     <div class="divisao-2"></div>
+
+
 
     <!-- 4º BLOCO -->
     <!-- AGUARDANDO APROVAÇÃO DO ANALISTA E DO ADMINISTRADOR. APARECE QUANDO O ALUNO ENVIAR A SOLUÇÃO -->
@@ -143,7 +292,7 @@
         
         <!-- 1º BLOCO -->
         <!-- AGUARDANDO APROVAÇÃO DO ANALISTA E DO ADMINISTRADOR. VAI PARA A PRÓXIMA ETAPA APENAS SE O ANALISTA (E) O ADMINISTRADOR ACEITAREM O DESAFIO -->
-        
+        <!--
         <button class="status-box mobile-font">Aguardando aprovação</button>
         <form action=""> 
             <div>   
@@ -151,13 +300,13 @@
                 <button class="status-box btn-danger mobile-font">Recusar</button>
             </div>
         </form>
-        
+        -->
         <!-- FIM -->
 
 
 
         <!-- 2º BLOCO -->
-        <!-- AGUARDANDO APROVAÇÃO DO ANALISTA OU DO ADMINISTRADOR. ESSE BLOCO APARECE SE O ANALISTA CONFIRMOU MAS O ADMINISTRADOR AINDA NÃO E VICE VERSA -->
+        <!-- AGUARDANDO APROVAÇÃO DO ANALISTA OU DO ADMINISTRADOR. ESSE BLOCO APARECE SE O ANALISTA CONFIRMOU MAS O ADMINISTRADOR AINDA NÃO E VICE VERSA (APARECE APENAS PARA OS USUÁRIOS ADM E ANALISTA) -->
         <!-- 
         <button class="status-box mobile-font">Aguardando aprovação</button>
         -->
@@ -166,7 +315,7 @@
 
 
         <!-- 3º BLOCO -->
-        <!-- ABERTO PARA SOLUÇÃO. ESSE BLOCO APARECE QUANDO O ANALISTA E O ADMINISTRADOR CONFIRMARAM O DESAFIO -->
+        <!-- ABERTO PARA SOLUÇÃO. ESSE BLOCO APARECE QUANDO O ANALISTA E O ADMINISTRADOR CONFIRMARAM O DESAFIO  (APARECE APENAS PARA OS USUÁRIOS ADM E ANALISTA) -->
         <!-- 
         <button class="status-box mobile-font">Aberto para solução</button>
         -->
@@ -175,7 +324,7 @@
 
 
         <!-- 3º BLOCO -->
-        <!-- AGUARDANDO SOLUÇÃO DO ALUNO. ESSE BLOCO APARECE QUANDO UM ALUNO ACEITA O DESAFIO -->
+        <!-- AGUARDANDO SOLUÇÃO DO ALUNO. ESSE BLOCO APARECE QUANDO UM ALUNO ACEITA O DESAFIO (APARECE APENAS PARA O USUÁRIO ALUNO) -->
         <!-- 
         <button class="status-box mobile-font">Aguardando solução do aluno</button>
         -->
@@ -185,15 +334,13 @@
 
         <!-- 4º BLOCO -->
         <!-- AGUARDANDO APROVAÇÃO DO ANALISTA E DO ADMINISTRADOR. VAI PARA A PRÓXIMA ETAPA APENAS SE O ANALISTA (E) O ADMINISTRADOR ACEITAREM O DESAFIO -->
-        <!--
+        
         <button class="status-box mobile-font">Aguardando aprovação</button>
         <form action=""> 
-            <div>   
-                <button type="submit" class="status-box btn-success mobile-font">Enviar comentário</button>
-                <button class="status-box btn-success mobile-font">Finalizar</button>
+            <div>
+                <button style="width: 100%;" class="status-box btn-success mobile-font">Finalizar</button>
             </div>
         </form>
-        -->
         <!-- FIM -->
 
 
@@ -304,9 +451,7 @@
                     </div>
 
                     <div class="w-100 m-1"><h2>Informações do analista</h2></div>
-
-                    <!-- Aparece as informações do analista se o analista aceitar o desafio -->
-                    <!--
+                    
                     <div class="main-section w-100">
                         <div class="c1">
                             <p>Usuário</p>
@@ -335,19 +480,35 @@
                             <input type="text" name="" value="Português" disabled>
                         </div>
                     </div>
-                    -->
-                    <!-- ELSE -->
-                    <div class="main-section w-100 box-info">
-                        <p>O analista ainda não aceitou o desafio</p>
+
+
+
+                </div>
+                <form action="usuarios.html">
+                    <div class="modal-btn-box">
+                        <button type="button" class="botao-login fechar-modal btn-sucess">Voltar</button>
                     </div>
-                    <!-- FIM ANALISTA-->
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+    <!-- FIM MODAL INFORMAÇÕES -->
 
 
-
+    <!-- MODAL INFORMAÇÕES -->
+    <div class="tela-escura fechar-modal-main modal_abrir_aluno_info_main">
+        <div class="modal h-25rem">
+            <div class="modal-header">
+            </div>
+            <nav></nav>
+            <div class="modal-main">
+                <div class="overflow">
                     <div class="w-100 m-1"><h2>Informações do aluno</h2></div>
 
-                    <!-- Aparece as informações do analista se o analista aceitar o desafio -->
-                    <!--
+                    <!-- ALUNO -->
                     <div class="main-section w-100">
                         <div class="c1">
                             <p>Usuário</p>
@@ -378,30 +539,20 @@
                             <input type="text" name="" value="Português" disabled>
                         </div>
                     </div>
-                    -->
-                    <!-- ELSE -->
-                    <div class="main-section w-100 box-info">
-                        <p>O aluno ainda não aceitou o desafio</p>
-                    </div>
-                    <!-- FIM ANALISTA-->
-
+                    <!-- FIM ALUNO-->
 
 
                 </div>
-                <form action="usuarios.html">
-                    <div class="modal-btn-box">
-                        <button type="button" class="botao-login fechar-modal btn-sucess">Voltar</button>
-                    </div>
-                </form>
+                <div class="modal-btn-box">
+                    <button type="button" class="botao-login fechar-modal btn-sucess">Voltar</button>
+                </div>
             </div>
             <div class="modal-footer">
 
             </div>
         </div>
     </div>
-    <!-- FIM MODAL INFORMAÇÕES -->
-
-
+    <!-- FIM MODAL INFORMAÇÕES ALUNO -->
 
 
     <!-- FOOTER -->
